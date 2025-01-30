@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>
+			My First Webpage
+		</title>
+		<style>
+			table, th, td {
+				border: 1px solid black;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<header>
+			<h1>My page</h1>
+			<p>Hello world.</p>
+		</header>
+		
+		<section>
+			<h2>Hobbies</h2>
+			<p>I have <span>some</span> hobbies.</p>
+			
+			<ol>
+				<li>Watching TV</li>
+				<li>Playing video games</li>
+				<li>Playing <a href="FunInfo/BoardGames.html">board games</a></li>
+			</ol>
+		</section>
+		
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/CFRhGnuXG-4?si=16h7O275Li8KmYaG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+		
+		<section>
+			<h2>My classes</h2>
+			<p>Here are my classes.</p>
+			
+			<table>
+				<thead>
+					<tr>
+						<th>Class Number</th>
+						<th>Name</th>
+						<th>Format</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>CSC 105</td>
+						<td>&lt;html&gt;Web Development&lt;/html&gt;</td>
+						<td>In person</td>
+					</tr>
+					<tr>
+						<td>CSC 305</td>
+						<td>Cross-Cultural and Accessible Web Design</td>
+						<td>Hybrid</td>
+					</tr>
+					<tr>
+						<td>IT 242</td>
+						<td>Database Management Systems</td>
+						<td>Online</td>
+					</tr>
+				</tbody>
+			</table>
+			
+			<form>
+				<label for="fname">First name: </label>
+				<input id="fname" type="text" name="firstname">
+				<br>
+				<label for="lname">Last name: </label>
+				<input id="lname" type="text" name="lastname">
+				<br>
+				<p>Gender:</p>
+				<label for="male">Male: </label>
+				<input id="male" type="radio" name="gender" value="male">
+				<br>
+				<label for="female">Female: </label>
+				<input id="female" type="radio" name="gender" value="female">
+				<br>
+				<label for="other">Other: </label>
+				<input id="other" type="radio" name="gender" value="other">
+				<br>
+			
+				<input type="submit" value="Submit">
+			</form>
+			
+			<h3>CSC 105</h3>
+			
+			<!-- Add content here
+				 Put stuff about CSC 105 for people to learn -->
+			
+			<h3>CSC 305</h3>
+		</section>
+	</body>
+</html>
