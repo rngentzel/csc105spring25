@@ -1,0 +1,44 @@
+* {
+	text-align: center;
+}
+
+section {
+	border: 3px dashed black;
+	border-radius: 40px;
+	margin: 30px;
+	padding: 20px;
+	background-color: #dedede;
+}
+
+.photoalbum {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+
+img {
+	width: 400px;
+}
+
+@media (width < 600px) {
+	img {
+		width: 280px;
+	}
+	
+	.photoalbum {
+		flex-direction: column;
+	}
+	
+	section {
+		margin: 10px;
+	}
+}
+
+@media (600px <= width <= 1000px) {
+	.photobox {
+		width: 45%;
+	}
+	img {
+		width: 95%
+	}
+}
