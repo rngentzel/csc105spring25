@@ -4,6 +4,18 @@
 		<title>My Cats</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="cats.css">
+		<style>
+			p {
+				font-size: 15pt;
+			}
+		</style>
+	
+		<script src="javascript.js" defer>
+		</script>
+		<!--
+		<script src="arraylooptest.js" defer>
+		</script>
+		-->
 	</head>
 	
 	<body>
@@ -11,39 +23,61 @@
 			<h1>Meet My Cats</h1>
 		</header>
 		
+		<p><a href="createaccount.html">Create account</a></p>
+		
+		<button id="clickmebutton">Click me!</button>
+		<p id="button_counter">0</p>
+		
+		<button id="deletebutton">Delete the number</button>
+		
+		<button id="createbutton">Create a paragraph</button>
+		
+		<br><br>
+		<input id="searchbox" type="text">
+		
+		<form>
+			<label>Email: </label>
+			<input type="email" id="new_email">
+			<p class="hidden" id="carlow_email_error">Must be Carlow email address.</p>
+			<br>
+			<label>Date: </label>
+			<input type="date" id="new_date">
+			<br>
+			<label>Image: </label>
+			<input type="text" id="new_image" required>
+			<br>
+			<label>Alt text: </label>
+			<input type="text" id="new_alt">
+			<br>
+			<label>Caption: </label>
+			<textarea id="new_caption" minlength="5" maxlength="20" required></textarea>
+			<p class="hidden" id="alt_caption_equal_error">Alt text and caption must be different.</p>
+			<br>
+			<label>How cute? (1-10): </label>
+			<input type="number" id="new_rating" min="1" max="10">
+			<br>
+			<label>Which cat?</label>
+			<select name="cats" id="new_cat">
+				<option value="rammus">Rammus</option>
+				<option value="poppy">Poppy</option>
+			</select>
+			<br>
+			<input id="submitcatpic" type="submit" value="Submit">
+		</form>
+		
 		<main>
 			<section>
 				<h2>Rammus</h2>
-				<div class="photoalbum">
-					<div class="photobox">
-						<img src="Images/SleepyRammus.jpg" alt="An orange cat sleeping on a couch.">
-						<p>This is my cat Rammus.</p>
-					</div>
-					<div class="photobox">
-						<img src="Images/HiThereRammus.jpg" alt="An orange cat curled up on a couch.">
-						<p>Rammus lying on the couch. He do that.</p>
-					</div>
-					<div class="photobox">
-						<img src="Images/BathtubRammus.jpg" alt="An orange cat sitting in a bathtub.">
-						<p>Rammus hides in the bathtub sometimes when the frying pan is being used. He's sensitive to sounds.</p>
-					</div>
+				<div id="rammusalbum" class="photoalbum">
+					
 				</div>
 			</section>
 			
 			<section>
 				<h2>Poppy</h2>
-				<div class="photoalbum">
-					<div class="photobox">
-						<img src="Images/PoppyWatchingTV.jpg" alt="A cat looking at birds on a stream on the TV.">
-						<p>Poppy loves watching birds on the TV.</p>
-					</div>
-					<div class="photobox">
-						<img src="Images/TwoCatsOnATree.jpg" alt="Two cats on a cat tree.">
-						<p>She also likes the cat tree.</p>
-					</div>
+				<div id="poppyalbum" class="photoalbum">
 				</div>
 			</section>
 		</main>
-		
 	</body>
 </html>
